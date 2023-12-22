@@ -1,0 +1,55 @@
+
+.header_ {
+  background: linear-gradient(90deg, rgba(202, 206, 255, 1) 0%, rgb(213, 163, 163) 100%);
+  
+}
+.spline__div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0rem 4rem;
+  max-width: 100%;
+  max-height: 50vh;
+  background-color: rgb(71, 61, 47);
+}
+.spliner {
+  max-width: 100%;
+}
+
+/* //////////////////////////////////////// */
+
+/*desktops - higher resolution*/
+@media (min-width: 1281px) {
+
+}
+
+/*laptops, desktops*/
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+}
+
+/*tablets, ipads (portrait)*/
+@media (min-width: 768px) and (max-width: 1024px) {
+
+}
+
+/*tablets, ipads (landscape)*/
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+}
+
+/*low resolution tablets, mobiles (landscape)*/
+@media (min-width: 481px) and (max-width: 767px) {
+
+}
+
+/*smartphones mobiles (portrait)*/
+@media (min-width: 320px) and (max-width: 480px) {
+    .about__container {
+        margin: 0;
+        padding: 0;
+    }
+    .header_{
+      height: 56vh;
+    }
+}

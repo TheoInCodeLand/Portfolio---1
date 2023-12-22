@@ -1,0 +1,109 @@
+
+
+.navbar__main__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem 6rem;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    font-family: serif;
+    font-size: 1.15em;
+}
+
+.navbar__logo {
+    background: tra;
+    font-weight: 600;
+    letter-spacing: 2px;
+    padding: 1.2rem 0.5rem;
+    border-radius: 50%;
+    border-bottom: px solid black;
+}
+
+.navbar__nav {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    align-items: center;
+    
+}
+
+.navbar__nav .link {
+    text-decoration: none;
+    color: var(--text-dark);
+    transition: all 500ms ease-in-out;
+    letter-spacing: 2px;
+    font-size: 0.9em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.navbar__nav .link:hover {
+    letter-spacing: 3px;
+    transition: all 500ms ease-in-out;
+    filter: drop-shadow(5px 10px 5px rgb(111, 111, 111));
+    font-size: 1.1em;
+}
+
+.navbar__links {
+    display: flex;
+    gap: 2rem;
+    font-size: larger;
+    
+}
+
+.navbar__links .link{
+    color: var(--text-dark);
+    font-family: 'Noto Sans', sans-serif;
+    transition: all 400ms ease-in-out;
+    font-size: 1em;
+}
+
+.navbar__links .link:hover {
+    letter-spacing: 3px;
+    transition: all 400ms ease-in-out;
+    filter: drop-shadow(5px 10px 5px rgb(70, 70, 70));
+    font-size: 1.5em;
+}
+    
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .navbar__nav {
+        display: none;
+    }
+}
+
+/*tablets, ipads (landscape)*/
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    .navbar__nav {
+        display: none;
+    }
+}
+
+/*low resolution tablets, mobiles (landscape)*/
+@media (min-width: 481px) and (max-width: 767px) {
+    .navbar__nav {
+        display: none;
+    }
+}
+
+/*smartphones mobiles (portrait)*/
+@media (min-width: 100px) and (max-width: 480px) {
+    .navbar__main__container {
+        justify-content: space-between;
+        padding: 1.5rem;
+
+    }
+
+    .navbar__nav {
+        display: none;
+        font-size: 5px;
+    }
+
+    .navbar__links .link {
+        font-size: 0.5em;
+    }
+
+    .navbar__links .link:hover {
+        font-size: 0.6em;
+    }
+}

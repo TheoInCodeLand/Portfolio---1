@@ -1,0 +1,233 @@
+.about_first__container-main {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 4rem 0rem;
+    border-bottom: 1px solid #54545455;
+}
+
+.about_first__container-main > div {
+
+    height: fit-content;
+    width: 50%;
+}
+
+.about_first__container-main .container-text {
+    transition: all 4s ease-in-out;
+    text-align: left;
+    width: 30%;
+}
+
+.about_first__container-main .container-text h1 {
+    color: #8663f873;
+    font-size: 108px;
+    letter-spacing: -6px;
+    font-family: "Proxima Nova Bold", "Helvetica Neue", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+    margin: 0px 0px 8px;
+    filter: drop-shadow(5px 5px 5px #00000058);
+    transition: all 1s ease-in-out;
+}
+
+.about_first__container-main .container-text h1:hover {
+    transform: scale(1.2);
+    transition: all 1s ease-in-out;
+    filter: drop-shadow(10px 10px 8px #000000d0);
+    
+}
+
+.about_first__container-main .container-text .intro {
+    color: #4e4e4e;
+    font-family: "Proxima Nova Light", "Helvetica Neue", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 26px;
+    line-height: 2;
+    font-weight: 450;
+
+    transition: all 1s ease-in-out;
+    filter: drop-shadow(5px 5px 5px #f4cc97c0);
+    margin: 0px 0px 35px;
+}
+
+.about_first__container-main .container-text .intro:hover {
+    transform: rotate(5deg);
+    transition: all 1s ease-in-out;
+    filter: drop-shadow(10px 10px 8px #000000d0);
+}
+
+.about_first__container-main .container-text .intro span {
+    color: #f4cc97e0;
+}
+
+.about_first__container-main .container-text .description {
+    color: #614141;
+    font-size: 16.5px;
+    line-height: 1.9rem;
+    font-family: "Proxima Nova Light", "Helvetica Neue", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0px 0px 24px;
+    font-weight: -10px;
+    transition: all 1s ease-in-out;
+}
+
+.about_first__container-main .container-text .description:hover {
+    transform: rotate(-5deg);
+    transition: all 1s ease-in-out;
+    filter: drop-shadow(10px 10px 8px #000000d0);
+}
+
+.container-img {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-img > div {
+    background-image: url('../../images/me_mug.jpg');
+    width: 27rem;
+    height: 27rem;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    animation: border-morph 60s infinite;
+    transition: all 4s ease-in-out;
+    box-shadow: 7px 7px 5px #8e6fff32,
+    -7px -7px 5px #ffb04227;
+}
+
+.container-img > div:hover {
+    background: transparent;
+    transition: all 4s ease-in-out;
+}
+
+@keyframes border-morph {
+    0% {
+        border-radius: 53% 47% 77% 23% / 48% 91% 9% 52% ;
+    }
+
+    20% {
+        border-radius: 48% 52% 45% 55% / 46% 65% 27% 54% ;
+    }
+
+    30% {
+        border-radius: 53% 47% 77% 23% / 48% 48% 52% 52% ;
+    }
+
+    40% {
+        border-radius: 74% 26% 75% 25% / 51% 71% 29% 49% ;
+    }
+
+    50% {
+        border-radius: 53% 47% 9% 91% / 48% 48% 52% 52% ;
+    }
+
+    60% {
+        border-radius: 53% 47% 77% 23% / 48% 53% 47% 52% ;
+    }
+
+    70% {
+        border-radius: 53% 47% 28% 72% / 48% 18% 82% 52% ;
+    }
+
+    80% {
+        border-radius: 73% 27% 52% 48% / 48% 53% 47% 52% ;
+    }
+
+    90% {
+        border-radius: 25% 75% 44% 56% / 83% 45% 55% 17% ;
+    }
+
+    100% {
+        border-radius: 48% 52% 45% 55% / 40% 19% 61% 60% ;
+    }
+}
+
+
+/* //////////////////////////////////////// */
+
+/*desktops - higher resolution*/
+@media (min-width: 1281px) {
+
+}
+
+/*laptops, desktops*/
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+}
+
+/*tablets, ipads (portrait)*/
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .about_first__container-main {
+        margin: 0;
+        padding: 0;
+        padding-bottom: 2rem;
+    }
+    .about_first__container-main .container-text .intro {
+        font-size: 30px;
+    }
+    .about_first__container-main .container-text .description {
+        font-size: 20px;
+    }
+    
+
+}
+
+/*tablets, ipads (landscape)*/
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+}
+
+/*low resolution tablets, mobiles (landscape)*/
+@media (min-width: 481px) and (max-width: 767px) {
+
+    .about_first__container-main {
+        margin: 0;
+        padding: 0;
+        padding-bottom: 2rem;
+    }
+
+    .about_first__container-main .container-text .description {
+        display: none;
+    }
+
+}
+
+/*smartphones mobiles (portrait)*/
+@media (min-width: 220px) and (max-width: 480px) {
+
+    .about_first__container-main {
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        padding-bottom: 2rem;
+    }
+    .about_first__container-main > div {
+        height: fit-content;
+        width: 100%;
+    }
+
+    .about_first__container-main .container-text{
+        height: fit-content;
+        width: 100%;
+    }
+    .about_first__container-main .container-text h1 {
+        font-size: 70px;
+    }
+    .about_first__container-main .container-text .intro {
+        font-size: 22px;
+    }
+    .about_first__container-main .container-text .description {
+        font-size: 17px;
+    }
+
+    .about_first__container-main .container-img{
+        height: fit-content;
+        width: 100%;
+    }
+    .about_first__container-main .container-img > div{
+        height: 15rem;
+        width: 15rem;
+    }
+}
